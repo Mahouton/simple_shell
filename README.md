@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Simple_shell Project
 
 ## About this project
@@ -45,3 +46,7 @@ The will be compiled this way:
 ```
 gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 ```
+=======
+# simple_shell
+# simple shell project in ALX School
+>>>>>>> Test101
