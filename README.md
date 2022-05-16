@@ -39,3 +39,9 @@ functionalities that a real shell does.
  - wait4 (man 2 wait4)
  - write (man 2 write)
 ****
+
+## Compilation
+The will be compiled this way:
+```
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+```
