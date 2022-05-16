@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Simple_shell Project
 
 ## About this project
@@ -42,11 +41,20 @@ functionalities that a real shell does.
 ****
 
 ## Compilation
-The will be compiled this way:
+The shell will be compiled this way:
 ```
-gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 ```
-=======
-# simple_shell
-# simple shell project in ALX School
->>>>>>> Test101
+
+## Functionalities of the Simple Shell
+> * Usage: simple_shell
+> * Display a prompt and wait for the user to type a command.
+A command line alaways end swith the new line.
+> * The prompt is displayed again each time a command has been executed.
+> * The command lines are simple, no semicolons, no pipes, no redirections or any
+other advanced features.
+> * The command lines ared made only of one word. No arguments will be passed to programs.
+> * If an executable cannot be found, print an error message and display the prompt again.
+> * Handle errors.
+> * Handle the "end of file" condition(Ctrl+D)
+
