@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-# shellcheck disable=SC2128
-cd "$(dirname "$(readlink -f "$BASH_SOURCE")")/.."
+# cd "$(dirname "$(readlink -f "$BASH_SOURCE")")/.."
 
 {
 	cat <<-'EOH'
