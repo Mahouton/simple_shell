@@ -53,8 +53,8 @@ The shell handles command line input, including arguements, without the use of m
 All files were created and compiled on `Ubuntu 20.04 LTS` using `GCC 4.8.4` with the following flags: `-Wall -Werror -Wextra -pedantic`
 
 ### Authors & Copyrights
-* John Mzee [Github](https://github.com/Mzee1991)
-* Derrick Mayiku Locha [Github](https://github.com/DeroMal)
+* Batya Tonny [Github](https://github.com/Chirrrupin)
+* Paul [Github](https://github.com/)
 
 ## More information
 
