@@ -1,52 +1,53 @@
-<<<<<<< HEAD
-# Simple_shell Project
+# Simple shell
 
-## About this project
-This project is a simple version of the UNIX command interpreter made for ALX PROGRAM.
-It is created using the **C programming Language** and it can do many
-functionalities that a real shell does.
+### Overview
+`shell` is a UNIX command interpreter that replicates core functionalities of the `sh` shell.
 
-****
-## List of allowed functions and system calls
- - access (man 2 access)
- - chdir (man 2 chdir)
- - close (man 2 close)
- - closedir (man 3 closedir)
- - execve (man 2 execve)
- - exit (man 3 exit)
- - _exit (man 2 _exit)
- - fflush (man 3 fflush)
- - fork (man 2 fork)
- - free (man 3 free)
- - getcwd (man 3 getcwd)
- - getline (man 3 getline)
- - getpid (man 2 getpid)
- - isatty (man 3 isatty)
- - kill (man 2 kill)
- - malloc (man 3 malloc)
- - open (man 2 open)
- - opendir (man 3 opendir)
- - perror (man 3 perror)
- - read (man 2 read)
- - readdir (man 3 readdir)
- - signal (man 2 signal)
- - stat (__xstat) (man 2 stat)
- - lstat (__lxstat) (man 2 lstat)
- - fstat (__fxstat) (man 2 fstat)
- - strtok (man 3 strtok)
- - wait (man 2 wait)
- - waitpid (man 2 waitpid)
- - wait3 (man 2 wait3)
- - wait4 (man 2 wait4)
- - write (man 2 write)
-****
+### Installation
+Clone this repository to your local system and compile using `gcc -Wall -Werror -Wextra -pedantic *.c`.
 
-## Compilation
-The will be compiled this way:
-```
-gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
-```
-=======
-# simple_shell
-# simple shell project in ALX School
->>>>>>> Test101
+### Usage
+* Once in the shell, use exactly like `sh`. A list of covered features is provided below. The shell can run in either interactive or non-interactive mode.
+* Function returns with the specified exit status.
+
+### Features
+The shell handles command line input, including arguements, without the use of most standard library functions such as `printf`, `strtok`, or `getline`. In addition to running executables in the PATH, the following features are currently implemented.
+
+|  Builtin Commands  |    Functionality                            |
+| ------------------ | ------------------------------------------- |
+| `exit [status]`    | Exit shell with specified exit status       |
+| `env`              | Print list of current environment variables |
+| `setenv`           | Set an environment variable                 |
+| `unsetenv`         | Unset an environment variable               |
+| `cd`               | Change directories                          |
+| `history`			 | Prints command history					   |
+| `help` 			 | Displays help for builtin commands		   |
+| `alias`			 | Alias a command as another or print aliases |
+
+|  Other Features    |    Functionality                            |
+| ------------------ | ------------------------------------------- |
+| `Ctrl-D`           | End of file - exit shell                    |
+| `Ctrl-C`           | Does not exit shell - (Differs from `sh`)   |
+| `;`                | Command separator, allows command chaining  |
+| `#`                | Comment indicator                           |
+| `<`				 | Redirect input							   |
+| `>`				 | Redirect output							   |
+| `<<`				 | Append input (heredoc)					   |
+| `>>`				 | Append output							   |
+
+### Example Usage
+* This shell takes input the same as a standard unix shell.  After running the executable `hsh`, enter desired input and press return.
+* `ls -l`
+* `exit 98`
+* `cd -`
+
+### Release History
+* 0.0.1 - First release - 07 May 2022
+* 0.0.2 - Second release - 18 May 2022
+
+### About
+All files were created and compiled on `Ubuntu 20.04 LTS` using `GCC 4.8.4` with the following flags: `-Wall -Werror -Wextra -pedantic`
+
+### Authors
+* Batya Tonny [Github](https://github.com/Chirrrupin)
+* Paul  [Github](https://github.com/[])
