@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 .TH "simple_shell" 1 "May 2022" ""
+=======
+.TH HSH 1 "16th May 2022" "1" "Simple Shell man page"
+>>>>>>> 61dd71654f8efde1fd802c802e45624ab146bc52
 .SH NAME
 simple_shell - a shell (standard command line interpreter)
 .SH SYNOPSIS
 hsh [-abcDefg] [arguement ...]
 .SH DESCRIPTION
+<<<<<<< HEAD
 The hsh utility reads and interprets a command line string, either in interactive or non-interactive mode. It then executes commands based on the input.  Both the local directory and PATH are searched.
 When applicable, the  function prints to stdout or stderr, the standard output and error stream, respectively.
 In interactive mode, the shell will prompt with \' $ \', and proess the entered input upon a return stroke.  In non-interactive mode, standard output must be piped into the executable.
@@ -27,6 +32,13 @@ In addition to searching the path, the following features are supported.
    $? $$ - variable replacement   
    FILE - Can take a file as command line argument
    $PS1 - Customizable PS1 prompt variable
+=======
+This program is a simple shell. It contains basic features and functions found in other shell programs.
+.SS Overview
+This shell is an executable that reads lines from the prompt, interprets them, and generally executes other commands. It runs by compiling all .c files in the repository to create an executable
+.SS Path Search
+When locating a command, this shell first looks to see if it has an executable by that name in the PATH of env. Then it looks for builtin commands by that name.
+>>>>>>> 61dd71654f8efde1fd802c802e45624ab146bc52
 
 .SH EXAMPLE USAGE
 cd -
@@ -42,8 +54,14 @@ help -d
 .SH LIMITATIONS
 Word length - Buffers of 1024 characacters are used in several aspects of the shell. Excessively long filenames or paths may cause errors.
 .SH BUGS
+<<<<<<< HEAD
 No known bugs at this time.
 .SH AUTHORS
 Written by Mzee John, Derrick Mayiku Locha
 .SH IN PROGRESS
 The following features are currently in progress
+=======
+No known bugs.
+.SH AUTHORS
+Paul Kpadonou, Tonny Batya 
+>>>>>>> 61dd71654f8efde1fd802c802e45624ab146bc52
